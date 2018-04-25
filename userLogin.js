@@ -13,16 +13,13 @@ var options = {
 curl.request(options, function(err, parts) {
 	var parts = JSON.stringify(parts)
 	var parts = parts.split('\\r\\n', -1)
-//	console.log(parts)
 	var token = parts[6]
-//	console.log(parts[6])
 	var token = token.split(": ", -1)
 	var token = token[1]
-//	console.log(token)
 	fs.writeFile('/home/jj/Electron/unms-control-page/token', token, function(err) {
     	if(err) {
         	return console.log(err);
     	}
-    	console.log("The token was saved!");
+    	document.write("TOKEN: <br> " + token + " <br> The token was saved!<br>")
 	});
 })
