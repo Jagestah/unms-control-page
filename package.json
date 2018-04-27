@@ -1,12 +1,12 @@
 {
-  "name": "electron-quick-start",
+  "name": "unms-control-page",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "For controller UNMS via Electron app",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/jagestah/unms-control-page",
   "keywords": [
     "Electron",
     "quick",
